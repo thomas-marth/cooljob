@@ -1,0 +1,75 @@
+.header {
+  background: #cde7ff;
+  padding: 18px 0;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 109px;
+}
+
+.logo {
+  font-family: "Red Hat Display";
+  font-size: 30px;
+  font-weight: 700;
+  color: #274059;
+}
+
+.menu {
+  display: flex;
+  gap: 53px;
+}
+
+.menu a {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  transition: color 0.2s;
+}
+
+.menu a:hover,
+.menu a:focus {
+  color: #4a8dcc;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+}
+
+.link {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.link:hover,
+.link:focus {
+  color: #2b5d8c;
+}
+
+.button {
+  font-size: 15px;
+  font-weight: 600;
+  background: #fff;
+  color: #274059;
+  padding: 13px 14px;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.button:hover,
+.button:focus {
+  color: #4a8dcc;
+}
