@@ -1,6 +1,41 @@
-#root {
-  max-width: 1280px;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 500;
+  color: #212529;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1720px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  background: none;
+  border: none;
 }
