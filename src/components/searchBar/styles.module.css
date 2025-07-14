@@ -84,6 +84,11 @@
   opacity: 1;
 }
 
+.inputField:focus::placeholder {
+  color: transparent;
+  transition: color 0.2s ease-out;
+}
+
 .centeredInput {
   justify-content: center;
   padding-left: 80px;
