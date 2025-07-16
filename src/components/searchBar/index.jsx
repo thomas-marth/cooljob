@@ -13,7 +13,7 @@ function SearchBar() {
 
           <form className={styles.searchForm}>
             <div className={styles.inputSection}>
-              <div className={styles.inputWrapper}>
+              <label className={styles.inputWrapper}>
                 <img src={searchIcon} className={styles.icon} alt="Search" />
                 <input
                   name="search"
@@ -21,11 +21,13 @@ function SearchBar() {
                   placeholder="Должность или компания"
                   className={styles.inputField}
                 />
-              </div>
+              </label>
 
               <div className={styles.divider}></div>
 
-              <div className={`${styles.inputWrapper} ${styles.centeredInput}`}>
+              <label
+                className={`${styles.inputWrapper} ${styles.centeredInput}`}
+              >
                 <img
                   src={locationIcon}
                   className={styles.icon}
@@ -37,7 +39,7 @@ function SearchBar() {
                   placeholder="Город, Страна"
                   className={styles.inputField}
                 />
-              </div>
+              </label>
             </div>
 
             <button type="submit" className={styles.searchButton}>

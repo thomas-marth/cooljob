@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  user-select: none;
 }
 
 .container {
