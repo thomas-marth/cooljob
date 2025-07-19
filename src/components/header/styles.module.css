@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 56px;
+  gap: 35px;
 }
 
 .left {
@@ -73,3 +74,75 @@
 .button:focus {
   color: #4a8dcc;
 }
+
+@media (max-width: 768px) {
+  .left {
+    gap: 60px;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+
+  .button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 569px) {
+  .inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .left {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .right {
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .button {
+    background: none;
+    padding: 0;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .right {
+    gap: 20px;
+    align-self: stretch;
+  }
+} */

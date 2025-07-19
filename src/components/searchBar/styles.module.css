@@ -34,6 +34,7 @@
 .searchForm {
   display: flex;
   max-width: 1132px;
+  width: 100%;
   background-color: #fff;
   filter: drop-shadow(6px 5px 9px rgba(0, 0, 0, 0.35));
 }
@@ -121,4 +122,72 @@
 
 .searchButton:hover {
   background-color: #2b5d8c;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0 90px;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .searchForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inputSection {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inputWrapper {
+    padding: 0 15px;
+    border-bottom: 1px solid rgba(184, 184, 184, 0.8);
+  }
+
+  .centeredInput {
+    padding-left: 15px;
+    justify-content: flex-start;
+  }
+
+  .inputField {
+    font-size: 16px;
+    padding: 24px 0;
+  }
+
+  .centeredInput .inputField {
+    width: 100%;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .searchButton {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .heading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .inputField {
+    font-size: 14px;
+  }
+
+  .icon[alt="Search"] {
+    width: 18px;
+  }
+
+  .icon[alt="Location"] {
+    width: 18px;
+  }
 }

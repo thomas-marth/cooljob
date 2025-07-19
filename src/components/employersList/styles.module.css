@@ -21,3 +21,31 @@
   gap: 56.39px;
   align-items: center;
 }
+
+@media (max-width: 1169px) {
+  .logoList {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .contentWrapper {
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoList {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 677px) {
+  .contentWrapper {
+    gap: 50px;
+  }
+}
